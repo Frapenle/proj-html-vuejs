@@ -1,5 +1,5 @@
 <script >
-import KeyFeature from './KeyFeature.vue';
+import KeyFeatures from './KeyFeature/KeyFeatures.vue';
 import QuickStart from './QuickStart.vue';
 import BuildTools from './BuildTools.vue';
 import PricingPlans from './PricingPlans.vue'
@@ -7,7 +7,7 @@ import PricingPlans from './PricingPlans.vue'
 export default {
     name: 'MainComp',
     components: {
-        KeyFeature,
+        KeyFeatures,
         QuickStart,
         BuildTools,
         PricingPlans,
@@ -24,7 +24,7 @@ export default {
 </script>
 
 <template>
-    <KeyFeature />
+    <KeyFeatures />
     <QuickStart />
     <BuildTools />
     <PricingPlans />

@@ -8,6 +8,29 @@ export default {
     },
     data() {
         return {
+            pricePlans: [
+                {
+                    planName: 'Basic',
+                    price: '$ 9.00',
+                    planTime: 'Per month',
+                    textInfo: 'All the basicsfor businessthat are just getting started.',
+                    servicesList: ['full access', 'enhanced security', 'source files', '1 domain free', 'enhanced security'],
+                },
+                {
+                    planName: 'Business',
+                    price: '$ 39.00',
+                    planTime: 'Per month',
+                    textInfo: 'Better for growing business that want more customer.',
+                    servicesList: ['full access', 'enhanced security', 'source files', '1 domain free', 'enhanced security'],
+                },
+                {
+                    planName: 'Enterprise',
+                    price: '$ 79.00',
+                    planTime: 'Per month',
+                    textInfo: 'Advanced features for props who need more customization.',
+                    servicesList: ['full access', 'enhanced security', 'source files', '1 domain free', 'enhanced security'],
+                },
+            ],
 
         }
     },
@@ -25,8 +48,8 @@ export default {
                 </div>
             </div>
             <div class="row">
-                <div class="col-4" v-for="item in 3">
-                    <PriceCard />
+                <div class="col-4">
+                    <PriceCard v-for="plan in pricePlans" :planName="plan.planName" />
                 </div>
             </div>
         </div>

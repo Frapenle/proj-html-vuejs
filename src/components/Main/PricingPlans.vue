@@ -16,7 +16,7 @@ export default {
 </template>
 
 <style lang="scss" scoped>
-@use '../src/styles/general.scss' as *;
-@use '../src/styles/partials/variables' as *;
+@use '../../styles/general.scss' as *;
+@use '../../styles/partials/variables' as *;
 @use "bootstrap/scss/bootstrap.scss" as *;
 </style>

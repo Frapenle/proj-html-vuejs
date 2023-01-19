@@ -29,6 +29,7 @@ export default {
             <div class="row">
                 <div class="col-3">
                     <div class="cards">
+                        <!-- insert 4 Features card -->
                         <FeaturesCard />
 
                     </div>

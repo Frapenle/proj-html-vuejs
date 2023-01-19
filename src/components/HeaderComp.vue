@@ -36,7 +36,7 @@ export default {
             <a href="#"><font-awesome-icon icon="fa-solid fa-magnifying-glass" /></a>
             <a href="#"><font-awesome-icon icon="fa-brands fa-github" /></a>
             <a href="#"><font-awesome-icon icon="fa-brands fa-stack-overflow" /></a>
-            <a href="#"><font-awesome-icon icon="fa-solid fa-magnifying-glass" /></a>
+            <a href="#"><font-awesome-icon icon="fa-regular fa-user" /></a>
           </div>
         </div>
 

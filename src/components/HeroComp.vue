@@ -46,6 +46,4 @@ export default {
 h1 {
     text-transform: capitalize;
 }
-
-.hero {}
 </style>

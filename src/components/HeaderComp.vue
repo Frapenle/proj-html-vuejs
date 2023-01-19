@@ -63,7 +63,6 @@ header {
 
 ul {
   display: flex;
-  padding: 0;
   margin: 0;
   gap: 1rem;
 

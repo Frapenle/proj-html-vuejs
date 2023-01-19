@@ -3,7 +3,7 @@ import HeaderComp from './components/HeaderComp.vue';
 import HeroComp from './components/HeroComp.vue';
 import PartnersComp from './components/PartnersComp.vue';
 import MainComp from './components/Main/MainComp.vue';
-import FooterComp from './components/FooterComp.vue';
+import FooterComp from './components/Footer/FooterComp.vue';
 
 export default {
   components: {

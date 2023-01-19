@@ -33,10 +33,10 @@ export default {
         <div class="col-3">
           <!-- icons -->
           <div id="nav-icons" class="text-end">
-            <a href="#"><font-awesome-icon icon="fa-solid fa-magnifying-glass" /></a>
-            <a href="#"><font-awesome-icon icon="fa-brands fa-github" /></a>
-            <a href="#"><font-awesome-icon icon="fa-brands fa-stack-overflow" /></a>
-            <a href="#"><font-awesome-icon icon="fa-regular fa-user" /></a>
+            <a href="#" class="square"><font-awesome-icon icon="fa-solid fa-magnifying-glass" /></a>
+            <a href="#" class="square"><font-awesome-icon icon="fa-brands fa-github" /></a>
+            <a href="#" class="square"><font-awesome-icon icon="fa-brands fa-stack-overflow" /></a>
+            <a href="#" class="square"><font-awesome-icon icon="fa-regular fa-user" /></a>
           </div>
         </div>
 
@@ -74,6 +74,12 @@ ul {
 
 .nav-icons li {
   padding: 0 .2rem;
+}
+
+.square {
+  border: 1px solid yellow;
+  padding: 4px 7px 5px;
+  border-radius: .375rem;
 }
 
 a {

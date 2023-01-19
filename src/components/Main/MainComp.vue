@@ -2,7 +2,7 @@
 import KeyFeatures from './KeyFeature/KeyFeatures.vue';
 import QuickStart from './QuickStart.vue';
 import BuildTools from './BuildTools.vue';
-import PricingPlans from './PricingPlans.vue'
+import PricingPlans from './PricingPlansFolder/PricingPlans.vue'
 
 export default {
     name: 'MainComp',
@@ -19,8 +19,6 @@ export default {
         }
     },
 }
-
-//import
 </script>
 
 <template>

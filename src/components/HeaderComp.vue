@@ -3,6 +3,7 @@ export default {
   name: 'HeaderComp',
   data() {
     return {
+      navList: ['home', 'landing', 'pages', 'docs']
 
     }
   },
@@ -13,8 +14,35 @@ export default {
 
 <template>
   <header>
-    <h1>header</h1>
+    <div class="container">
+      <div class="row h-100 d-flex align-items-center">
+        <div class="col-3">
+          <!-- logo -->
+          <div id="logo">
+            <img src="../assets/img/logo-dark.png" alt="Landrick logo" width="120">
+          </div>
+        </div>
+        <div class="col-6">
+          <!-- menu -->
+          <div id="menu" class="d-flex justify-content-center">
+            <ul>
+              <li v-for="item in navList"><a href="#">{{ item.toUpperCase() }}</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-3">
+          <!-- icons -->
+          <div id="nav-icons" class="text-end">
+            <a href="#"><font-awesome-icon icon="fa-solid fa-magnifying-glass" /></a>
+            <a href="#"><font-awesome-icon icon="fa-brands fa-github" /></a>
+            <a href="#"><font-awesome-icon icon="fa-brands fa-stack-overflow" /></a>
+            <a href="#"><font-awesome-icon icon="fa-solid fa-magnifying-glass" /></a>
+          </div>
+        </div>
 
+      </div>
+
+    </div>
   </header>
 
 </template>
@@ -23,4 +51,32 @@ export default {
 @use '../styles/general.scss' as *;
 @use '../styles/partials/variables' as *;
 @use "bootstrap/scss/bootstrap.scss" as *;
+
+header {
+  height: 50px;
+  background-color: red;
+}
+
+.container {
+  height: 100%;
+}
+
+ul {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  gap: 1rem;
+
+  .menu li {
+    padding: 0 4rem;
+  }
+}
+
+.nav-icons li {
+  padding: 0 .2rem;
+}
+
+a {
+  color: black
+}
 </style>

@@ -25,7 +25,7 @@ export default {
                 </div>
             </div>
             <div class="row">
-                <div class="col-4">
+                <div class="col-4" v-for="item in 3">
                     <PriceCard />
                 </div>
             </div>

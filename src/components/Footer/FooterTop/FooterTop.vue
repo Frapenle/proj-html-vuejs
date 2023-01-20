@@ -85,15 +85,26 @@ export default {
 }
 
 input#email {
+    width: 100%;
     border-radius: .375rem !important;
     color: $grey-text;
     padding: .3rem;
     border: none;
     outline: none;
     background-color: #27314F;
+    margin-bottom: 1rem;
 }
 
 hr {
     color: #b4c7ff78;
+}
+
+.form a {
+    width: 100%;
+    padding: .4rem;
+    background-color: #212E50;
+    color: $blu;
+
+
 }
 </style>

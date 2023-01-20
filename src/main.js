@@ -18,6 +18,17 @@ import { faUser as farUser } from '@fortawesome/free-regular-svg-icons'
 import { faChevronRight } from '@fortawesome/free-solid-svg-icons'
 import { faCircleCheck } from '@fortawesome/free-regular-svg-icons'
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons'
+import { faFacebookF } from '@fortawesome/free-brands-svg-icons'
+import { faSquareFacebook } from '@fortawesome/free-brands-svg-icons'
+import { faTwitter } from '@fortawesome/free-brands-svg-icons'
+import { faTwitterSquare } from '@fortawesome/free-brands-svg-icons'
+import { faInstagram } from '@fortawesome/free-brands-svg-icons'
+import { faLinkedinIn } from '@fortawesome/free-brands-svg-icons'
+
+
+
+
+
 
 
 
@@ -28,7 +39,7 @@ import { faArrowRight } from '@fortawesome/free-solid-svg-icons'
 
 
 /* add icons to the library */
-library.add(faUserSecret, faMagnifyingGlass, faGithub, faStackOverflow, farUser, fasUser, faChevronRight, faCircleCheck, faArrowRight)
+library.add(faUserSecret, faMagnifyingGlass, faGithub, faStackOverflow, farUser, fasUser, faChevronRight, faCircleCheck, faArrowRight, faFacebookF, faSquareFacebook, faTwitter, faTwitterSquare, faInstagram, faLinkedinIn)
 
 createApp(App)
     .component('font-awesome-icon', FontAwesomeIcon)

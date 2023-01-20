@@ -62,6 +62,26 @@ export default {
             </div>
         </div>
     </section>
+    <section id="contact-us">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-12">
+                    <h2>Want to be among the first to find out?</h2>
+                    <p class="py-3">Start working with <span class="landrick">Landrick</span> that can provide
+                        everything you need to
+                        generate<br>
+                        awareness, drive traffic,connect.</p>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-12">
+                    <div class="d-flex justify-content-center">
+                        <input type="email" name="" id="contact-us-email" placeholder="Email Address">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 </template>
 
 <style lang="scss" scoped>
@@ -71,5 +91,18 @@ export default {
 
 #pricing-plans {
     padding-bottom: 70px;
+}
+
+#contact-us {
+    margin-bottom: 4rem;
+}
+
+input {
+    width: 50%;
+    padding: .9rem;
+    border-radius: 2rem;
+    outline: none;
+    border: 1px solid $input;
+    font-size: 1rem;
 }
 </style>

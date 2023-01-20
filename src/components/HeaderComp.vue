@@ -19,7 +19,7 @@ export default {
         <div class="col-3">
           <!-- logo -->
           <div id="logo">
-            <a href="#"><img src="../assets/img/logo-dark.png" alt="Landrick logo" width="100"></a>
+            <a href="#"><img src="../assets/img/logo-dark.png" alt="Landrick logo" width="130"></a>
           </div>
         </div>
         <div class="col-6">
@@ -55,6 +55,7 @@ export default {
 header {
   width: 100%;
   height: 50px;
+  background-color: $bg-header;
 }
 
 .container {
@@ -101,7 +102,7 @@ ul {
 }
 
 .square.bg-color {
-  background-color: $bg-icons-header;
+  background-color: $bg-icons-soft;
   -webkit-box-shadow: -8px 11px 9px -9px rgba(220, 226, 245, 1);
   -moz-box-shadow: -8px 11px 9px -9px rgba(220, 226, 245, 1);
   box-shadow: -8px 11px 9px -9px rgba(220, 226, 245, 1);

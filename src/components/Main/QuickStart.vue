@@ -23,7 +23,8 @@ export default {
             <div class="row text-center">
                 <div class="col-12">
                     <h2>Awesome isn't it? Let's dive in!</h2>
-                    <p>Start working with <span class="landrick">Landrick</span> that can provide everything you need to
+                    <p class="py-3">Start working with <span class="landrick">Landrick</span> that can provide
+                        everything you need to
                         generate<br>
                         awareness, drive traffic,connect.</p>
                 </div>

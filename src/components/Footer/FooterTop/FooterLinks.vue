@@ -1,5 +1,5 @@
 <template lang="">
-            <div class="links-container d-flex gap-5">
+            <div class="links-container d-flex justify-content-around">
                 <div id="company">
                     <h5>Company</h5>
                     <ul>

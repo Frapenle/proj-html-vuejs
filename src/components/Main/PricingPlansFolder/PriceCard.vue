@@ -14,7 +14,7 @@
                         <p>{{points}}</p>
                     </li>
                 </ul>
-                <a href="#" class="btn btn-primary w-100">{{btnText}}</a>
+                <a href="#" class="btn btn-blu w-100">{{btnText}}</a>
                 <p class="text-cc">{{textCc}}</p>
 
             </div>
@@ -98,6 +98,7 @@ li {
     color: $grey-price-card;
     margin-bottom: 0 !important;
     margin-top: 1rem !important;
-    font-size: .7rem;
+    font-size: .8rem;
+    font-weight: 500;
 }
 </style>

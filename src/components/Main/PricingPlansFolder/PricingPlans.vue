@@ -48,8 +48,9 @@ export default {
         <div class="container">
             <div class="row text-center">
                 <div class="col-12">
-                    <h2>Our rates for developerrom Landrickeam</h2>
-                    <p>Start working with <span class="landrick">Landrick</span> that can provide everything you need to
+                    <h2>Our rates for developer from Landrick team</h2>
+                    <p class="py-3">Start working with <span class="landrick">Landrick</span> that can provide
+                        everything you need to
                         generate<br>
                         awareness, drive traffic,connect.</p>
                 </div>

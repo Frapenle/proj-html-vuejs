@@ -15,17 +15,23 @@ export default {
 <template>
     <section id="quick-start">
         <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <p class="quickstart-text mb-1">Quickstart</p>
+                </div>
+            </div>
             <div class="row text-center">
                 <div class="col-12">
                     <h2>Awesome isn't it? Let's dive in!</h2>
-                    <p>Start working with <span>Landrick</span> that can provide everything you need to generate<br>
+                    <p>Start working with <span class="landrick">Landrick</span> that can provide everything you need to
+                        generate<br>
                         awareness, drive traffic,connect.</p>
                 </div>
             </div>
-            <div class="row justify-content-center">
+            <div class="row justify-content-center ">
                 <div class="col-12">
                     <div class="d-flex justify-content-center">
-                        <div class="box rounded-1">
+                        <div class="box rounded-1 mb-3">
                             <ul class="d-flex text-center rounded-1">
                                 <li class="rounded-1" v-for="tool in devToolsList">
                                     {{ tool }}
@@ -36,11 +42,26 @@ export default {
                                 <p><span>-g</span> claps.js</p>
                             </div>
                         </div>
-
                     </div>
 
                 </div>
+                <div class="col-6 ms-4">
+                    <div class="sub-box d-flex gap-5">
+                        <p>
+                            <font-awesome-icon icon="fa-regular fa-circle-check" class="color-green" /><span>&nbsp;
+                                Organize
+                                your data</span>
+                        </p>
+                        <p>
+                            <font-awesome-icon icon="fa-regular fa-circle-check" class="color-green" /><span>&nbsp; Work
+                                with
+                                any team</span>
+                        </p>
+                    </div>
+                </div>
             </div>
+
+
         </div>
     </section>
 </template>
@@ -49,6 +70,16 @@ export default {
 @use '../../styles/general.scss' as *;
 @use '../../styles/partials/variables' as *;
 @use "bootstrap/scss/bootstrap.scss" as *;
+
+.quickstart-text {
+    color: $blu;
+    font-weight: 600;
+    text-align: center;
+}
+
+.color-green {
+    color: $green-symbol;
+}
 
 .box {
     width: 550px;
@@ -81,5 +112,9 @@ li {
     span {
         color: $green-symbol;
     }
+}
+
+.sub-box span {
+    vertical-align: middle;
 }
 </style>

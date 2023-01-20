@@ -38,6 +38,10 @@ p {
   color: $blu;
 }
 
+.font-1 {
+  font-size: 1rem;
+}
+
 .btn {
   font-weight: 500 !important;
 }

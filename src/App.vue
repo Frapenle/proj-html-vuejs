@@ -31,6 +31,7 @@ export default {
 
 p {
   color: $grey-text;
+  font-size: 1rem;
 }
 
 .btn {

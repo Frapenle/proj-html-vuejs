@@ -34,6 +34,10 @@ p {
   font-size: 1rem;
 }
 
+.landrick {
+  color: $blu;
+}
+
 .btn {
   font-weight: 500 !important;
 }

@@ -6,7 +6,7 @@
             </div>
             <h6>{{title}}</h6>
             <p>{{text}}</p>
-            <p><a href="#">Read more <font-awesome-icon icon="fa-solid fa-chevron-right" /></a></p>
+            <p class="mb-1"><a href="#">Read more <font-awesome-icon icon="fa-solid fa-chevron-right" /></a></p>
         </div>
 
     </div>
@@ -39,6 +39,8 @@ export default {
     display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: .5rem;
+    margin-bottom: 1rem;
 }
 
 .center {

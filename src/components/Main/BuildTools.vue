@@ -73,8 +73,4 @@ li p {
 .color-blue {
     color: $blu;
 }
-
-.font-1 {
-    font-size: 1rem;
-}
 </style>

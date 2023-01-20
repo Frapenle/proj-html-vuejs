@@ -29,6 +29,29 @@ export default {
 @use './styles/partials/variables' as *;
 @use "bootstrap/scss/bootstrap.scss" as *;
 
+p {
+  color: $grey-text;
+}
+
+.btn {
+  font-weight: 500 !important;
+}
+
+.btn-blu {
+  background-color: $blu !important;
+  color: $text-col-white !important;
+}
+
+.btn-outline-blu {
+  border: 1px solid $blu !important;
+  color: $blu !important;
+
+  &:hover {
+    color: white !important;
+    background-color: $blu !important;
+  }
+}
+
 .intro-text {
   color: $blu;
 }

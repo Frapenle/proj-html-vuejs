@@ -2,15 +2,15 @@
         <div class="col-4">
             <div class="plan-card rounded-2">
                 <div class="plan-name color-blue rounded-5 d-inline-block">{{planName}}</div>
-                <div class="price">
+                <div class="price mb-4 pt-3">
                     <p class="mb-0">{{price}}</p>
                     <span>{{planTime}}</span>
                 </div>
-                <p class="line-3">{{textInfo}}</p>
+                <p class="">{{textInfo}}</p>
                 <hr>
                 <ul>
                     <li v-for="points in services" class="d-flex gap-1">
-                        <font-awesome-icon icon="fa-regular fa-circle-check" class="color-blue"/>
+                        <font-awesome-icon icon="fa-regular fa-circle-check" class="color-blue font-1"/>
                         <p>{{points}}</p>
                     </li>
                 </ul>
@@ -55,14 +55,11 @@ export default {
     color: $grey-price-card;
 }
 
-.line-3 {
-    height: 4rem;
-}
-
 .plan-name {
-    padding: .3rem 1rem;
+    padding: .4rem 1.1rem;
     background-color: $bg-plan-name;
     border: 1px solid $border-plan-name !important;
+    font-weight: 700;
 }
 
 .price {
@@ -78,7 +75,7 @@ export default {
     }
 
     span {
-        font-size: .7rem;
+        font-size: .9rem;
     }
 }
 

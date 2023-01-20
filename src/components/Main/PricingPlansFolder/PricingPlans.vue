@@ -49,7 +49,7 @@ export default {
             <div class="row text-center">
                 <div class="col-12">
                     <h2>Our rates for developer from Landrick team</h2>
-                    <p class="py-3">Start working with <span class="landrick">Landrick</span> that can provide
+                    <p class="py-3 mb-5">Start working with <span class="landrick">Landrick</span> that can provide
                         everything you need to
                         generate<br>
                         awareness, drive traffic,connect.</p>
@@ -68,4 +68,8 @@ export default {
 @use '../../../styles/general.scss' as *;
 @use '../../../styles/partials/variables' as *;
 @use "bootstrap/scss/bootstrap.scss" as *;
+
+#pricing-plans {
+    padding-bottom: 70px;
+}
 </style>

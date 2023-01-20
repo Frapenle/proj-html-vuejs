@@ -19,17 +19,18 @@ export default {
             <div class="row align-items-center">
                 <div class="col-6">
                     <div class="left">
+                        <div class="sticker">
+                            <a href="#">Development</a>
+                        </div>
                         <h1>A complete<br>developer toolset</h1>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae sequi nesciunt omnis impedit
-                            nemo.
-                            Ut, eveniet asperiores dicta architecto minima et. Officiis quasi magnam nemo pariatur.
-                            Minus
-                            incidunt rem enim.</p>
+                        <p class="py-3">Launch your campaign and benefit from our expertise on designing and managing
+                            conversion
+                            centered bootstrap4 html page.</p>
                         <div class="buttons d-flex gap-2">
                             <button class="btn btn-blu">Get started</button>
                             <button class="btn btn-outline-blu">Documentation</button>
                         </div>
-                        <p>Current Version: v2.6.0</p>
+                        <p class="py-2">Current Version: v2.6.0</p>
                     </div>
 
                 </div>
@@ -61,5 +62,17 @@ export default {
 h1 {
     text-transform: capitalize;
     font-weight: 700;
+    line-height: 4rem;
+}
+
+.sticker>a {
+    color: $blu;
+    background-color: $bg-sticker-soft;
+    display: inline-block;
+    padding: .2rem .6rem;
+    border-radius: 1rem;
+    font-weight: 700;
+    border: .5px solid #ADB5BD;
+
 }
 </style>

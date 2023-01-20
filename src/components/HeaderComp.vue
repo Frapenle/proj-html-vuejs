@@ -3,7 +3,7 @@ export default {
   name: 'HeaderComp',
   data() {
     return {
-      navList: ['home', 'landing', 'pages', 'docs']
+      navList: ['landing', 'pages', 'docs']
 
     }
   },
@@ -19,29 +19,29 @@ export default {
         <div class="col-3">
           <!-- logo -->
           <div id="logo">
-            <img src="../assets/img/logo-dark.png" alt="Landrick logo" width="120">
+            <a href="#"><img src="../assets/img/logo-dark.png" alt="Landrick logo" width="100"></a>
           </div>
         </div>
         <div class="col-6">
           <!-- menu -->
           <div id="menu" class="d-flex justify-content-center">
             <ul>
-              <li v-for="item in navList"><a href="#">{{ item.toUpperCase() }}</a></li>
+              <li><a href="#">Home</a></li>
+              <li v-for="item in navList"><a href="#">{{ item }}</a></li>
             </ul>
           </div>
         </div>
         <div class="col-3">
           <!-- icons -->
-          <div id="nav-icons" class="text-end">
+          <div id="nav-icons my_dropdown-toggle" class="text-end">
             <a href="#" class="square"><font-awesome-icon icon="fa-solid fa-magnifying-glass" /></a>
-            <a href="#" class="square"><font-awesome-icon icon="fa-brands fa-github" /></a>
-            <a href="#" class="square"><font-awesome-icon icon="fa-brands fa-stack-overflow" /></a>
-            <a href="#" class="square"><font-awesome-icon icon="fa-regular fa-user" /></a>
+            <a href="#" class="square bg-color"><font-awesome-icon icon="fa-brands fa-github" /></a>
+            <a href="#" class="square bg-color"><font-awesome-icon icon="fa-brands fa-stack-overflow" /></a>
+            <a href="#" class="square bg-color"><font-awesome-icon icon="fa-regular fa-user" /></a>
           </div>
         </div>
 
       </div>
-
     </div>
   </header>
 
@@ -53,8 +53,8 @@ export default {
 @use "bootstrap/scss/bootstrap.scss" as *;
 
 header {
+  width: 100%;
   height: 50px;
-  background-color: red;
 }
 
 .container {
@@ -66,20 +66,47 @@ ul {
   margin: 0;
   gap: 1rem;
 
-  .menu li {
-    padding: 0 4rem;
+  li {
+    text-transform: uppercase;
   }
+
+}
+
+.my_dropdown-toggle::after {
+  content: url(../assets/img/chevron-down-solid.svg);
+  display: inline-block;
+  margin-left: 6px;
+  width: 12px;
+  vertical-align: sub;
+}
+
+.nav-item.dropdown:hover .my_dropdown-toggle::after {
+  content: url(../assets/img/chevron-down-solid-hover.svg);
 }
 
 .nav-icons li {
   padding: 0 .2rem;
+
+  a>font-awesome-icon {
+    color: blanchedalmond !important;
+  }
 }
 
 .square {
-  border: 1px solid yellow;
-  padding: 4px 7px 5px;
+  // border: 1px solid $bg-icons-header;
+  padding: 5px 8px 6px;
+  margin: 0 3px;
   border-radius: .375rem;
+
 }
+
+.square.bg-color {
+  background-color: $bg-icons-header;
+  -webkit-box-shadow: -8px 11px 9px -9px rgba(220, 226, 245, 1);
+  -moz-box-shadow: -8px 11px 9px -9px rgba(220, 226, 245, 1);
+  box-shadow: -8px 11px 9px -9px rgba(220, 226, 245, 1);
+}
+
 
 a {
   color: black

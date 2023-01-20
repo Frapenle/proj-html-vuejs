@@ -49,7 +49,8 @@ export default {
             <div class="row text-center">
                 <div class="col-12">
                     <h2>Our rates for developerrom Landrickeam</h2>
-                    <p>Start working with <span>Landrick</span> that can provide everything you need to generate<br>
+                    <p>Start working with <span class="landrick">Landrick</span> that can provide everything you need to
+                        generate<br>
                         awareness, drive traffic,connect.</p>
                 </div>
             </div>

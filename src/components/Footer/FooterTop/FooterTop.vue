@@ -105,6 +105,9 @@ hr {
     background-color: #212E50;
     color: $blu;
 
-
+    &:hover {
+        background-color: #213258;
+        color: white;
+    }
 }
 </style>

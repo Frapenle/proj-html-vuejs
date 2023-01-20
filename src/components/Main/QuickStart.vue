@@ -23,17 +23,20 @@ export default {
                 </div>
             </div>
             <div class="row justify-content-center">
-                <div class="col-8">
-                    <div class="box rounded-1">
-                        <ul class="d-flex text-center rounded-1">
-                            <li class="rounded-1" v-for="tool in devToolsList">
-                                {{ tool }}
-                            </li>
-                        </ul>
-                        <div class="text-tip d-flex gap-2">
-                            <p><span>&dollar;</span> npm install</p>
-                            <p><span>-g</span> claps.js</p>
+                <div class="col-12">
+                    <div class="d-flex justify-content-center">
+                        <div class="box rounded-1">
+                            <ul class="d-flex text-center rounded-1">
+                                <li class="rounded-1" v-for="tool in devToolsList">
+                                    {{ tool }}
+                                </li>
+                            </ul>
+                            <div class="text-tip d-flex gap-2">
+                                <p><span>&dollar;</span> npm install</p>
+                                <p><span>-g</span> claps.js</p>
+                            </div>
                         </div>
+
                     </div>
 
                 </div>

@@ -1,22 +1,48 @@
 <template lang="">
-    <div class="card">
-        <div class="ico">
-            <img src="" alt="">
+    <div class="col-3">
+        <div class="card">
+            <div class="ico">
+                <font-awesome-icon :icon="icon" class="center"/>
+            </div>
+            <h6>{{title}}</h6>
+            <p>{{text}}</p>
+            <p><a href="#">Read more <font-awesome-icon icon="fa-solid fa-chevron-right" /></a></p>
         </div>
-        <h6>modular</h6>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, sequi.</p>
-        <p><a href="#">Read more <font-awesome-icon icon="fa-solid fa-chevron-right" /></a></p>
+
     </div>
 </template>
 <script>
 export default {
+    props: {
+        icon: String,
+        title: String,
+        text: String,
+        readMore: String,
+    },
 
 }
 </script>
-<style lang="scss">
+<style lang="scss" scoped>
+@use '../../../styles/partials/variables' as *;
+@use '../../../styles/general.scss' as *;
+@use "bootstrap/scss/bootstrap.scss" as *;
+
 .card {
     padding: 1rem;
 }
 
-p:last-child::after {}
+.ico {
+    background-color: $bg-icons-features;
+    display: inline;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.center {
+    padding-left: 2px;
+    padding-top: 1px;
+}
 </style>

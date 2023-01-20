@@ -19,11 +19,11 @@ export default {
 <template>
     <section id="partners">
         <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <div class="partners-wrapper d-flex">
+            <div class="row justify-content-center flex-wrap">
+                <div class="col-6 col-md-12">
+                    <div class="partners-wrapper d-flex flex-wrap">
                         <div :id="partner" v-for="(partner, i) in partners" :key="i">
-                            <img :src="getImagePath(partner)" :alt="partner + ' logo'" width="80">
+                            <img :src="getImagePath(partner)" :alt="partner + ' logo'" width="80" class="img-fluid">
                         </div>
                     </div>
                 </div>

@@ -19,7 +19,7 @@ export default {
 }
 </script>
 <template lang="">
-    <section id="footer-top" class="py-5">
+    <section id="footer-top" class="pt-5">
 
         <div class="container">
             <div class="row justify-content-between">
@@ -58,6 +58,7 @@ export default {
                 </div>
             </div>
         </div>
+        <hr>
     </section>
 
 </template>
@@ -65,11 +66,6 @@ export default {
 @use '../../../styles/general.scss' as *;
 @use '../../../styles/partials/variables' as *;
 @use "bootstrap/scss/bootstrap.scss" as *;
-
-#footer-top {
-    color: white;
-    font-size: .9rem;
-}
 
 .ico-border {
     border: 1px solid $border-col-white;
@@ -94,5 +90,9 @@ input#email {
     padding: .3rem;
     border: none;
     outline: none;
+}
+
+hr {
+    color: #b4c7ff78;
 }
 </style>

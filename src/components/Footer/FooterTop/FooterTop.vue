@@ -86,10 +86,11 @@ export default {
 
 input#email {
     border-radius: .375rem !important;
-    color: black;
+    color: $grey-text;
     padding: .3rem;
     border: none;
     outline: none;
+    background-color: #27314F;
 }
 
 hr {

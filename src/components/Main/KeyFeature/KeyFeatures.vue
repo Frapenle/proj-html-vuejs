@@ -47,7 +47,8 @@ export default {
             <div class="row">
                 <div class="col-12">
                     <h2>Key Features</h2>
-                    <p class="py-3 mb-5">Start working with <span>Landrick</span> that can provide everything you need
+                    <p class="py-3 mb-5">Start working with <span class="landrick">Landrick</span> that can provide
+                        everything you need
                         to
                         generate<br>
                         awareness, drive traffic,connect.</p>

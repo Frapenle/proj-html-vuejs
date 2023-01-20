@@ -16,19 +16,19 @@ export default {
             <div class="row justify-content-between">
                 <div class="col-6">
                     <h1>Build tools and<br>extensive documentation</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae sequi nesciunt omnis impedit nemo.
-                        Ut, eveniet.</p>
+                    <p class="py-3">You can combine all the Landrick templates into a single one, you can take a
+                        component from the Application theme and use it in the Website.</p>
                     <ul>
                         <li class="d-flex gap-1">
-                            <font-awesome-icon icon="fa-regular fa-circle-check" />
+                            <font-awesome-icon icon="fa-regular fa-circle-check" class="color-blue fs-1" />
                             <p>Digital Marketing Solution for Tomorrow</p>
                         </li>
                         <li class="d-flex gap-1">
-                            <font-awesome-icon icon="fa-regular fa-circle-check" />
+                            <font-awesome-icon icon="fa-regular fa-circle-check" class="color-blue fs-1" />
                             <p>Our Talented & Experienced Marketing Agency</p>
                         </li>
                         <li class="d-flex gap-1">
-                            <font-awesome-icon icon="fa-regular fa-circle-check" />
+                            <font-awesome-icon icon="fa-regular fa-circle-check" class="color-blue fs-1" />
                             <p>Create your own skin to match your brand</p>
                         </li>
                     </ul>
@@ -52,12 +52,23 @@ export default {
 @use '../../styles/partials/variables' as *;
 @use "bootstrap/scss/bootstrap.scss" as *;
 
+#build-tools {
+    padding: 70px 0;
+}
+
 li p {
     font-size: .9rem;
-    line-height: 16px;
 }
 
 .center {
     vertical-align: text-bottom;
+}
+
+.color-blue {
+    color: $blu;
+}
+
+.fs-1 {
+    font-size: .4rem;
 }
 </style>

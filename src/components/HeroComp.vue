@@ -28,7 +28,7 @@ export default {
                 </div>
                 <div class="col-6">
                     <div class="about-img">
-                        <img src="../assets/img/about.png" alt="about image">
+                        <img src="../assets/img/about.png" alt="about image" class="img-fluid">
                     </div>
                 </div>
 
@@ -45,5 +45,6 @@ export default {
 
 h1 {
     text-transform: capitalize;
+    font-weight: 700;
 }
 </style>

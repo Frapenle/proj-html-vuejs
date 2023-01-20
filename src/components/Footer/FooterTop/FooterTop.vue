@@ -10,7 +10,8 @@ export default {
     },
     data() {
         return {
-            footerInfo: 'Start working width Landrick that can provide everything you need to generate awareness, drive traffic, connect.'
+            footerInfo: 'Start working width Landrick that can provide everything you need to generate awareness, drive traffic, connect.',
+            inputEmail: '',
 
         }
     },
@@ -22,24 +23,38 @@ export default {
 
         <div class="container">
             <div class="row justify-content-between">
-                <div class="col-3">
+                <div class="col-4">
                     <div class="footer-logo">
                         <img src="../../../assets/img/logo-light.png" alt="Landrick logo" width="150">
                     </div>
                     <div class="info">
-                        <p class="footer-info py-4 mx-0">
+                        <p class="footer-info py-4 m-0">
                             {{footerInfo}}
                         </p>
                     </div>
-                    <div class="social-icons">
-                        <font-awesome-icon icon="fa-brands fa-facebook-f --fa-inverse" class="icon-b"/>
+                    <div class="social-icons d-flex gap-2">
+                        <font-awesome-icon icon="fa-brands fa-facebook-f " class="ico-border facebook"/>
+                        <font-awesome-icon icon="fa-brands fa-twitter" class="ico-border twitter"/>
+                        <font-awesome-icon icon="fa-brands fa-instagram" class="ico-border instagram"/>
+                        <font-awesome-icon icon="fa-brands fa-linkedin-in" class="ico-border linkedin"/>
                     </div>
                 </div>
-                <div class="col-6">
+                <div class="col-5">
                     <FooterLinks />
                 </div>
                 <div class="col-3">
-                    <h1>testo</h1>
+                    <div class="d-flex justify-content-center">
+                        <div class="wrapper">
+
+                            <h5>Newsletter</h5>
+                            <p>Sign up and receive the latest tips via email.</p>
+                            <div class="form">
+                                <input :v-model="inputEmail" type="email" name="" id="email" placeholder=" Your email :">
+                                <a href="#" class="btn">Subscribe</a>
+                            </div>
+                        </div>
+
+                    </div>
                 </div>
             </div>
         </div>
@@ -53,12 +68,31 @@ export default {
 
 #footer-top {
     color: white;
+    font-size: .9rem;
 }
 
-.icon-b {
+.ico-border {
     border: 1px solid $border-col-white;
     border-radius: .375rem;
+}
+
+.facebook {
     padding: 5px 7px;
 
+}
+
+.twitter,
+.instagram,
+.linkedin {
+    padding: 5px 5px;
+
+}
+
+input#email {
+    border-radius: .375rem !important;
+    color: black;
+    padding: .3rem;
+    border: none;
+    outline: none;
 }
 </style>

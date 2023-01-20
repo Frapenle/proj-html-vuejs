@@ -18,10 +18,11 @@ export default {
 
 <template>
     <section id="partners">
+        <hr>
         <div class="container">
             <div class="row justify-content-center flex-wrap">
                 <div class="col-6 col-md-12">
-                    <div class="partners-wrapper d-flex flex-wrap">
+                    <div class="partners-wrapper d-flex flex-wrap justify-content-around">
                         <div :id="partner" v-for="(partner, i) in partners" :key="i">
                             <img :src="getImagePath(partner)" :alt="partner + ' logo'" width="80" class="img-fluid">
                         </div>
@@ -39,8 +40,17 @@ export default {
 @use '../styles/partials/variables' as *;
 @use "bootstrap/scss/bootstrap.scss" as *;
 
+#partners {
+    background-color: $bg-header;
+}
+
 .partners-wrapper {
     gap: 3rem;
     justify-content: center;
+    padding: 2rem;
+}
+
+hr {
+    margin: 0;
 }
 </style>

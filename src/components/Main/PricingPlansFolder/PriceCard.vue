@@ -1,5 +1,4 @@
 <template lang="">
-    <!-- <div class="row"> -->
         <div class="col-4">
             <div class="plan-card rounded-2">
                 <div class="plan-name color-blue rounded-5 d-inline-block">{{planName}}</div>
@@ -17,11 +16,9 @@
                 </ul>
                 <a href="#" class="btn btn-primary w-100">{{btnText}}</a>
                 <p class="text-cc">{{textCc}}</p>
-    
-            </div>
 
+            </div>
         </div>
-    <!-- </div> -->
 </template>
 <script>
 // import { stringifyExpression } from '@vue/compiler-core';

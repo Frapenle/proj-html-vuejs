@@ -31,5 +31,7 @@ export default {
 
 footer {
     background-color: $bg-footer;
+    color: $text-col-white;
+    font-size: .9rem;
 }
 </style>

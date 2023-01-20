@@ -3,7 +3,7 @@
                 <div id="company">
                     <h5>Company</h5>
                     <ul>
-                        <li v-for="(item, i) in companyList" :key="i"><a href="#">
+                        <li v-for="(item, i) in companyList" :key="i"><a href="#"><font-awesome-icon class="chevron-right" icon="fa-solid fa-chevron-right" />
                             {{item}}
                         </a>
                         </li>
@@ -12,7 +12,7 @@
                 <div id="usefull-links">
                     <h5>Usefull Links</h5>
                     <ul>
-                        <li v-for="(link, index) in usefullLinks" :key="index"><a href="#">
+                        <li v-for="(link, index) in usefullLinks" :key="index"><a href="#"><font-awesome-icon class="chevron-right" icon="fa-solid fa-chevron-right" />
                             {{link}}
                         </a></li>
                     </ul>
@@ -39,5 +39,19 @@ export default {
 h5,
 a {
     color: $text-col-white !important;
+    margin-bottom: 1.5rem;
+}
+
+.chevron-right {
+    padding-right: .6rem
+}
+
+li {
+    margin-bottom: 1rem;
+    color: $grey-text !important;
+
+    a {
+        color: $grey-text !important;
+    }
 }
 </style>

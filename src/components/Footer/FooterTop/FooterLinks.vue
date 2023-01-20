@@ -43,7 +43,8 @@ a {
 }
 
 .chevron-right {
-    padding-right: .6rem
+    padding-right: .5rem;
+    font-size: .7rem;
 }
 
 li {
